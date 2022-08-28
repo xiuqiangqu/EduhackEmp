@@ -29,13 +29,16 @@ var ydict = getCookie("timetracker");
 //  }
 
 var yValues=[];
+var total_learning_time = 0;
+
 for (i=0; i<7; i++){
   yValues.push(ydict[xValues[i]]);
+  total_learning_time += ydict[xValues[i]];
   // document.writeln(xValues[i]+":")
   // document.writeln(ydict[xValues[i]])
   // document.writeln(yValues.join(";"));
 }
-
+//document.writeln("total is "+ total_learning_time.toString());
 new Chart("myChart", {
   type: "bar",
   data: {
