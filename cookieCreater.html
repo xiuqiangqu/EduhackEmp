@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Chart </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            for (var i=0; i<7; i++) {
+                var d = new Date();
+                d.setDate(d.getDate() -6 + i);
+                var key = 'timetracker_' + d.getTime().toString();
+                var value = d.setMinutes(d.getMinutes()+ i*10+10);
+                document.cookie = key + " = " + value;
+                //console.log(key + " = " + value);
+                document.writeln(key + " = " + value);
+    }
+        </script>
+        <noscript>
+            Your browser doesn't support or has disabled Javascript
+        </noscript>
+        </body>
+</html>
