@@ -8,7 +8,6 @@ function calcage(secs, num1, num2) {
 function CountBack(secs) {
     if (secs < 0) {
         document.getElementById("cntdwn").innerHTML = FinishMessage;
-        // document.getElementById("mainButton").hidden = false;
         youDidIt();
 
         let x = "timetracker_" + StartTime.toString() + "=" + EndTime.toString();
@@ -27,19 +26,14 @@ function CountBack(secs) {
         setTimeout("CountBack(" + (secs + CountStepper) + ")", SetTimeOutPeriod);
 }
 function youDidIt(){
-    var x = document.createElement("IMG");
-    x.setAttribute("src","youdidit.jpg");
-    x.setAttribute("width","100");
-    x.setAttribute("height","100");
-    x.setAttribute("alt","You Did It!!!");
-    document.body.appendChild(x);
+    document.getElementById("udiditimage").hidden=false
 }
 function putspan(backcolor, forecolor) {
     document.write("<span id='cntdwn' style='background-color:" + backcolor +
         "; color:" + forecolor + "'></span>");
 }
 
-function countdown2() {
+function countdown2() { 
 
 
     var dthen = new Date(TargetDate);

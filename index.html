@@ -146,7 +146,7 @@
     <title>EduCloud</title>
 </head>
 <body>
-    <navPanel>
+    <!-- <navPanel>
         <input type ="checkbox" name ="" id ="chk1">
         <div class="logo"><img src = "EduCloudWhite.svg"></div>
             <ul>
@@ -160,8 +160,9 @@
                     <i class="fa fa-bars"></i>
                 </label>
             </div>
-    </navPanel>
-    <div>
+    </navPanel> -->
+ 
+    <div width="100px" height="50px" position:sticky top=80px>
         <select class="dropbtn" id="timeSelector">
             <option value="5" selected>5 mins</option>
             <option value="10">10 mins</option>
@@ -181,6 +182,10 @@
         <button onclick="StartSession()" class="dropbtn" id="StartSessionButton">Start Session</button>
         <br/>
         <p id='cntdwn' style='background-color:#ffffff;color:#c00070;font-family: Verdana' hidden=true></p>
+        <div class="gallery">
+            <img src="youdidit.jpg" alt="you did it" width="100px" height="100px" id="udiditimage" hidden=true/>
+        </div>
+        
     </div>
 
     <script type = "text/javascript" src = "visualizer.js"></script>
