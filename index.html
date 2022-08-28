@@ -146,20 +146,37 @@
     <title>EduCloud</title>
 </head>
 <body>
-    <!-- <navPanel>
+    <navPanel>
         <input type ="checkbox" name ="" id ="chk1">
         <div class="logo"><img src = "EduCloudWhite.svg" width = 300px height = 100px ></div>
             <ul>
-                <li><a href="https://gentle-island-081d9031e.1.azurestaticapps.net/">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="https://gentle-island-081d9031e.1.azurestaticapps.net/history">Your History</a></li>
-                <li><a href="https://gentle-island-081d9031e.1.azurestaticapps.net/session-timer">Set A Session</a></li>
-                <li><a href="https://gentle-island-081d9031e.1.azurestaticapps.net/assignments">Assignments</a></li>
-                <li><a href="https://gentle-island-081d9031e.1.azurestaticapps.net/shop">Credit Shop</a></li>
+                <li><a href="assignment.html">Assignments (WIP)</a></li>
             </ul>
             <iframe src="credit.html" style="background:rgba(0, 0, 0, 0.209);width:300px;height:130px;border:none" title = "Credit System"></iframe>
-    </navPanel> -->
-    <div width="100px" height="50px" position:sticky top=80px>
+    </navPanel>
+    
+    <script type = "text/javascript" src = "visualizer.js"></script>
+            <script type="text/javascript">
+            </script>
+            <noscript>
+                Your browser doesn't support or has disabled Javascript
+    </noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <p align = "center" style="padding-top:150px;font-family:Verdana;font-size:30px;">Welcome to EduCloud, where students and teachers are at their best, supporting one another.</p>
+
+    <div style="padding-top:0px;width:1600px;height:1000px;background-color:rgba(0, 0, 0, 0.158)"
+        <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">The following demonstrates a chart that tracks student progress over the past seven days, or a week.</p>
+        <canvas id="myChart" style="width:100%;max-width:1600px">
+        <script type = "text/javascript" src = "cookieReader.js"></script>
+        <script type = "text/javascript" src = "visualizer.js"></script>
+        </canvas>
+
+        <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">Click options below to start learning.
+        <br>
+
         <select class="dropbtn" id="timeSelector">
             <option value="5" selected>5 mins</option>
             <option value="10">10 mins</option>
@@ -177,23 +194,12 @@
         </select>
 
         <button onclick="StartSession()" class="dropbtn" id="StartSessionButton">Start Session</button>
-        <br/>
         <p id='cntdwn' style='background-color:#ffffff;color:#c00070;font-family: Verdana' hidden=true></p>
         <div class="gallery">
             <img src="youdidit.jpg" alt="you did it" width="100px" height="100px" id="udiditimage" hidden=true/>
         </div>
-        
+        </p>
     </div>
-    <script type = "text/javascript" src = "visualizer.js"></script>
-            <script type="text/javascript">
-            </script>
-            <noscript>
-                Your browser doesn't support or has disabled Javascript
-    </noscript>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <canvas id="myChart" style="width:100%;max-width:6000px"></canvas>
-    <script type = "text/javascript" src = "cookieReader.js"></script>
-    <script type = "text/javascript" src = "visualizer.js"></script>
     <script type = "text/javascript" src = "countdwn.js"></script>
 </body>
 </html>
