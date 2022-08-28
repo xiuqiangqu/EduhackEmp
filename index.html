@@ -92,6 +92,49 @@
         }
       
     }
+    .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
     </style>
     <script>
     </script>
@@ -118,6 +161,28 @@
                 </label>
             </div>
     </navPanel>
+    <div>
+        <select class="dropbtn" id="timeSelector">
+            <option value="5" selected>5 mins</option>
+            <option value="10">10 mins</option>
+            <option value="15">15 mins</option>
+            <option value="20">20 mins</option>
+            <option value="25">25 mins</option>
+            <option value="30">30 mins</option>
+            <option value="35">35 mins</option>
+            <option value="40">40 mins</option>
+            <option value="45">45 mins</option>
+            <option value="50">50 mins</option>
+            <option value="55">55 mins</option>
+            <option value="60">60 mins</option>
+            <option value="0.16666666667">10 seconds (for demo)</option>
+        </select>
+
+        <button onclick="StartSession()" class="dropbtn" id="StartSessionButton">Start Session</button>
+        <br/>
+        <p id='cntdwn' style='background-color:#ffffff;color:#c00070;font-family: Verdana' hidden=true></p>
+    </div>
+
     <script type = "text/javascript" src = "visualizer.js"></script>
             <script type="text/javascript">
             </script>
@@ -128,5 +193,6 @@
     <canvas id="myChart" style="width:100%;max-width:6000px"></canvas>
     <script type = "text/javascript" src = "cookieReader.js"></script>
     <script type = "text/javascript" src = "visualizer.js"></script>
+    <script type = "text/javascript" src = "countdwn.js"></script>
 </body>
 </html>
