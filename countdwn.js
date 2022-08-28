@@ -45,6 +45,7 @@ function countdown2() {
         ddiff = new Date(dthen - dnow);
     gsecs = Math.floor(ddiff.valueOf() / 1000);
     document.getElementById("cntdwn").hidden=false;
+    document.getElementById("udiditimage").hidden=true
     CountBack(gsecs);
 }
 
