@@ -69,7 +69,7 @@ new Chart("myChart", {
     legend: {display: false},
     title: {
       display: true,
-      text: "Last 7 Days"
+      text: "Time Studied in Last 7 Days (minutes)"
     },
     scales: {
         yAxes: [{
