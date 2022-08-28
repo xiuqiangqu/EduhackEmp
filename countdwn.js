@@ -27,6 +27,7 @@ function CountBack(secs) {
 }
 function youDidIt(){
     document.getElementById("udiditimage").hidden=false
+    document.getElementById("StartSessionButton").hidden=false
 }
 function putspan(backcolor, forecolor) {
     document.write("<span id='cntdwn' style='background-color:" + backcolor +
