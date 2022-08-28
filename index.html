@@ -154,7 +154,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a>Assignments (WIP)</a></li>
             </ul>
-            <iframe src="credit.html" style="background:rgba(0, 0, 0, 0.209);width:300px;height:130px;border:none" title = "Credit System"></iframe>
     </navPanel>
     
     <script type = "text/javascript" src = "visualizer.js"></script>
@@ -168,13 +167,7 @@
     <p align = "center" style="padding-top:150px;font-family:Verdana;font-size:30px;">Welcome to EduCloud, where students and teachers are at their best, supporting one another.</p>
 
     <div style="padding-top:0px;width:1600px;height:1000px;background-color:rgba(0, 0, 0, 0.158)"
-        <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">The following demonstrates a chart that tracks student progress over the past seven days, or a week.</p>
-        <canvas id="myChart" style="width:100%;max-width:1600px">
-        <script type = "text/javascript" src = "cookieReader.js"></script>
-        <script type = "text/javascript" src = "visualizer.js"></script>
-        </canvas>
-
-        <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">Click options below to start learning.
+    <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">Click options below to start learning.
         <br>
 
         <select class="dropbtn" id="timeSelector">
@@ -198,6 +191,27 @@
         <div class="gallery">
             <img src="youdidit.jpg" alt="you did it" width="100px" height="100px" id="udiditimage" hidden=true/>
         </div>
+        <br>
+        <br>
+        <button style = "border:rgba(0, 0, 0, 0.127);border-radius:4px;font-family:fantasy;background-color: rgba(0, 0, 0, 0.106);">Your learning minutes in the past 7 days:</button>
+        <p id="score">0</p>
+
+        <p>Your reward: </p>
+        <p id="reward"></p>
+
+        <script>
+            let total_learning_time = 0;
+        </script>
+
+        <script src="credit.js"></script>
+        
+        <p align = "center" style="padding-top:50px;font-family: Verdana;font-size: 14px;">The following demonstrates a chart that tracks student progress over the past seven days, or a week.</p>
+        <canvas id="myChart" style="width:100%;max-width:1200px">
+        <script type = "text/javascript" src = "cookieReader.js"></script>
+        <script type = "text/javascript" src = "visualizer.js"></script>
+        </canvas>
+
+        
         </p>
     </div>
     <script type = "text/javascript" src = "countdwn.js"></script>
