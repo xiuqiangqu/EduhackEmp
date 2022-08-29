@@ -6,6 +6,6 @@ function creditUpdateTimer() {
     for (let i = 60; i < total_learning_time; i = i + 60) {
         reward += "&#127775";
     }
-    document.getElementById("score").innerHTML = total_learning_time.toString();
+    document.getElementById("score").innerHTML = total_learning_time.toFixed(2).toString();
     document.getElementById("reward").innerHTML = reward.toString();
 }
